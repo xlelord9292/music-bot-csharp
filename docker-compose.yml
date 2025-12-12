@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  musico:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: musico-bot
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      - DOTNET_ENVIRONMENT=Production
+    networks:
+      - musico-network
+    # Uncomment below if you want to run your own Lavalink server
+    # depends_on:
+    #   - lavalink
+
+  # Optional: Run your own Lavalink server
+  # Uncomment this section if you want a local Lavalink instance
+  # lavalink:
+  #   image: ghcr.io/lavalink-devs/lavalink:4
+  #   container_name: lavalink
+  #   restart: unless-stopped
+  #   environment:
+  #     - SERVER_PORT=2333
+  #     - LAVALINK_SERVER_PASSWORD=youshallnotpass
+  #   volumes:
+  #     - ./lavalink/application.yml:/opt/Lavalink/application.yml
+  #   networks:
+  #     - musico-network
+  #   ports:
+  #     - "2333:2333"
+
+networks:
+  musico-network:
+    driver: bridge
