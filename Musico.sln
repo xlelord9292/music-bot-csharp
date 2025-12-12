@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Musico", "Musico.csproj", "{639A636B-D81D-1F0C-7BA6-B05C98F3563B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{639A636B-D81D-1F0C-7BA6-B05C98F3563B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{639A636B-D81D-1F0C-7BA6-B05C98F3563B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{639A636B-D81D-1F0C-7BA6-B05C98F3563B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{639A636B-D81D-1F0C-7BA6-B05C98F3563B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9C996FF6-6FBA-4448-8E88-473F46FFEC04}
+	EndGlobalSection
+EndGlobal
