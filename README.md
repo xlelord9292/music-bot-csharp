@@ -96,6 +96,9 @@ dotnet build
 
 # Run
 dotnet run
+
+# OR YOU CAN USE DOCKER
+docker-compose up -d --build
 ```
 
 ## 📦 Dependencies
